@@ -1,5 +1,11 @@
 import { createApp } from 'vue'
-import './style.css'
 import App from './App.vue'
+import router from './router';
+import store from './store';
+import "./style.css";
+import 'vue-cal/dist/vuecal.css';
 
-createApp(App).mount('#app')
+createApp(App)
+    .use(router)
+    .use(store)
+    .mount('#app')
